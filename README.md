@@ -3,7 +3,6 @@
 > publish-safe evidence artifacts. Documentation is licensed under
 > CC BY 4.0. See LICENSE and SECURITY_NOTICE.md.
 
-This repository contains public security documentation and publish-safe evidence artifacts for **Atopos**.
 
 ## What’s included
 - Security whitepaper
