@@ -1,0 +1,61 @@
+{
+  "run_date": "2026-02-22T22:37:46Z",
+  "git_commit": "2af28dc2eeea",
+  "run_context": "prod",
+  "inputs_present": {
+    "store_db": true,
+    "base_url": true,
+    "log_paths": true
+  },
+  "completeness": "complete",
+  "overall_ok": true,
+  "key_counts": {
+    "routes_accept_fragment_count": 0,
+    "fragment_checked_files": 2,
+    "tables_scanned": 34,
+    "forbidden_columns_found": 0,
+    "lines_scanned": 7,
+    "violations_count": 0,
+    "routing_checks_run": 1
+  },
+  "partials": [],
+  "scripts": [
+    {
+      "script": "fragment_leak_check",
+      "status": "pass",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "script": "db_sensitive_fields_scan",
+      "status": "pass",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "script": "log_redaction_audit",
+      "status": "pass",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "script": "envelope_size_check",
+      "status": "pass",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "script": "routing_mode_smoke",
+      "status": "pass",
+      "ok": true,
+      "reason": null
+    }
+  ],
+  "artifacts": [
+    "fragment_leak_check.json",
+    "db_sensitive_fields_scan.json",
+    "log_redaction_audit.json",
+    "envelope_size_check.json",
+    "routing_mode_smoke.json"
+  ]
+}
