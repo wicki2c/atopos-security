@@ -16,3 +16,6 @@ Official documentation is published only via:
 - https://github.com/wicki2c/atopos-security
 
 If you discover a vulnerability, please follow DISCLOSURE_POLICY.md.
+
+Evidence artifacts may not be modified or selectively excerpted
+in a way that misrepresents completeness or status.
