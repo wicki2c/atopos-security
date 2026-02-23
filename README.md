@@ -1,29 +1,26 @@
-# atopos-security
-> This repository contains official Atopos security documentation and
-> publish-safe evidence artifacts. Documentation is licensed under
-> CC BY 4.0. See LICENSE and SECURITY_NOTICE.md.
+# Atopos Security
 
+This repository contains public security documentation and publish-safe evidence artifacts for **Atopos**.
 
 ## What’s included
-- Security whitepaper
-- Threat model
-- Transparency report
-- Disclosure policy (responsible vulnerability reporting)
-- Claims matrix and security tests
-- Evidence artifacts generated from production runs (publish-safe)
+- [Security whitepaper](./WHITEPAPER.md)
+- [Threat model](./THREAT_MODEL.md)
+- [Transparency report](./TRANSPARENCY_REPORT.md)
+- [Disclosure policy](./DISCLOSURE_POLICY.md)
+- Evidence artifacts (publish-safe): [`evidence/latest/`](./evidence/latest/)
 
-## Evidence
-Evidence artifacts are published under:
-- `evidence/latest/`
-
-These artifacts are designed to support review of specific claims (see `SECURITY_CLAIMS_MATRIX.md`) without publishing secrets, hostnames, IPs, raw logs, or environment values.
+## Latest evidence (publish-safe)
+- [Evidence summary](./evidence/latest/EVIDENCE_SUMMARY.md)
 
 ## Scope / limitations
-Atopos is designed so the service does not possess message decryption keys.
+Atopos is designed so the service does **not possess message decryption keys** by design.  
 This does **not** protect against:
 - endpoint compromise,
 - malicious participants,
 - screenshots/copying.
 
 ## Responsible disclosure
-See `DISCLOSURE_POLICY.md`.
+See [DISCLOSURE_POLICY.md](./DISCLOSURE_POLICY.md).
+
+## License
+Documentation in this repo is licensed under CC BY 4.0. See [LICENSE](./LICENSE) and [SECURITY_NOTICE.md](./SECURITY_NOTICE.md).
