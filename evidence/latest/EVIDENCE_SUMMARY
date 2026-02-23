@@ -1,25 +1,38 @@
-# Evidence Summary (Publish-safe)
+# Evidence Summary (Publish-Safe)
 
-This folder contains publish-safe evidence artifacts for a validation run.
+This document summarises the most recent production validation run for Atopos.
 
-## Latest run (summary)
+## Run Overview
+
+- Run date (UTC): 2026-02-22T22:37:46Z
 - Run context: production
 - Completeness: complete
 - Overall status: pass
 
-## Checks covered
-- Fragment non-transmission validation
-- Database schema scan for secret-bearing fields (schema-level)
-- Log redaction audit (bounded scan)
-- Envelope size invariant validation
-- Routing mode verification
+## Validation Results
+
+| Check | Result |
+|-------|--------|
+| Fragment non-transmission | Pass |
+| Database schema secret scan (schema-level) | Pass |
+| Log redaction audit (bounded scan) | Pass |
+| Envelope size invariant validation | Pass |
+| Routing mode verification | Pass |
+
+## Completeness Inputs
+
+All required validation inputs were present:
+
+- Database connection available
+- Base URL reachable
+- Application log paths accessible
 
 ## Notes
-- Evidence artifacts are published in a publish-safe form. They do not include secrets, hostnames, IP addresses, raw logs, or environment values.
-- Evidence does not replace independent review or formal security audit.
-- Client compromise and malicious participant scenarios remain out of scope.
 
-## Files
-- `summary.md` (optional)
-- `summary.json` (optional)
-- `reviewer_pack.md` (optional)
+- This summary is publish-safe and does not include hostnames, environment values, raw logs, or infrastructure details.
+- Evidence reflects application-level checks only.
+- Endpoint compromise and malicious participant scenarios remain out of scope.
+- External infrastructure logs (e.g., reverse proxies outside application control) are not measured by this run.
+
+For disclosure or independent review requests, see:
+- `DISCLOSURE_POLICY.md`
