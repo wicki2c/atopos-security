@@ -1,0 +1,25 @@
+# Evidence Summary (Publish-safe)
+
+This folder contains publish-safe evidence artifacts for a validation run.
+
+## Latest run (summary)
+- Run context: production
+- Completeness: complete
+- Overall status: pass
+
+## Checks covered
+- Fragment non-transmission validation
+- Database schema scan for secret-bearing fields (schema-level)
+- Log redaction audit (bounded scan)
+- Envelope size invariant validation
+- Routing mode verification
+
+## Notes
+- Evidence artifacts are published in a publish-safe form. They do not include secrets, hostnames, IP addresses, raw logs, or environment values.
+- Evidence does not replace independent review or formal security audit.
+- Client compromise and malicious participant scenarios remain out of scope.
+
+## Files
+- `summary.md` (optional)
+- `summary.json` (optional)
+- `reviewer_pack.md` (optional)
